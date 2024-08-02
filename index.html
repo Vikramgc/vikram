@@ -1,202 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camilo Lyons Valero - Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-QsA3V6D8LAXUinO6Q2B0YVzj5F3x3B3PbLtY8YRV1iYk9LmxsR8Fqfrft4lti09K" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-6jYOKa+PpK3GR6BFBeHVXfQ0F3cq0m9c17n2d7TqptLKPmjTn8LO0F72X7CEWn3S" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header class="container-fluid text-center p-3">
-        <div class="profile-image">
-            <img src="./assets/profile_picture.jpg" class="rounded-circle" alt="Profile Picture">
-        </div>
-        <h1 class="my-2">Camilo Lyons Valero</h1>
-        <h2>Electromechanical Engineer</h2>
-    </header>
-
-    <section class="container text-center p-3">
-        <h2>About Me</h2>
-        <p>I am an Electromechanical Engineer passionate about automation and design. I have experience in the development of mechanical systems and in the implementation of electrical and control systems for automation. My work focuses on achieving innovative and efficient solutions to engineering problems.</p>
-    </section>
-
-    <section class="container text-center p-3">
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> camilo.lyons.valero@example.com</p>
-        <p><strong>Phone:</strong> +123 456 7890</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/camilo-lyons-valero/">Camilo Lyons Valero</a></p>
-    </section>
-
-    <section class="container text-center p-3">
-        <h2>Skills</h2>
-        <ul class="list-inline">
-            <li class="list-inline-item">3D Design</li>
-            <li class="list-inline-item">Automation</li>
-            <li class="list-inline-item">Programming</li>
-            <li class="list-inline-item">Project Management</li>
-        </ul>
-    </section>
-
-    <div class="container">
-        <section class="projects" id="projects">
-            <h2>Projects</h2>
-            
-            <!-- Enlarged Project Card 1 -->
-            <article class="project-card" style="transform: scale(3);">
-                <div id="carousel7" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carousel7" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carousel7" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carousel7" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Packaging Hopper">
-                        <div class="carousel-item active">
-                            <img src="./assets/tolva-empaque-1.png" class="d-block w-100" alt="Packaging Hopper 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/tolva-empaque-2.png" class="d-block w-100" alt="Packaging Hopper 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/tolva-empaque-3.png" class="d-block w-100" alt="Packaging Hopper 3">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel7" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel7" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <h3 data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Packaging Hopper">Packaging Hopper</h3>
-            </article>
-            
-            <!-- Enlarged Project Card 2 -->
-            <article class="project-card" style="transform: scale(3);">
-                <div id="carousel8" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carousel8" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carousel8" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    </div>
-                    <div class="carousel-inner" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Aerial Packaging">
-                        <div class="carousel-item active">
-                            <img src="./assets/aero-empaque-1.png" class="d-block w-100" alt="Aerial Packaging 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/aero-empaque-2.png" class="d-block w-100" alt="Aerial Packaging 2">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel8" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel8" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <h3 data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Aerial Packaging">Aerial Packaging</h3>
-            </article>
-            
-            <!-- Enlarged Project Card 3 -->
-            <article class="project-card" style="transform: scale(3);">
-                <div id="carousel9" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carousel9" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carousel9" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    </div>
-                    <div class="carousel-inner" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Elevator Transfer to Aerial Packaging">
-                        <div class="carousel-item active">
-                            <img src="./assets/trans-elevador-aereo.png" class="d-block w-100" alt="Elevator Transfer 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/trans-elevador-aereo-2.png" class="d-block w-100" alt="Elevator Transfer 2">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel9" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel9" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <h3 data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Elevator Transfer to Aerial Packaging">Elevator Transfer to Aerial Packaging</h3>
-            </article>
-            
-            <!-- Enlarged Project Card 4 -->
-            <article class="project-card" style="transform: scale(3);">
-                <div id="carousel10" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carousel10" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carousel10" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carousel10" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carousel10" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    </div>
-                    <div class="carousel-inner" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Mobile Gantry Test">
-                        <div class="carousel-item active">
-                            <img src="./assets/test-portico-movil-1.png" class="d-block w-100" alt="Mobile Gantry Test 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/test-portico-movil-2.png" class="d-block w-100" alt="Mobile Gantry Test 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/test-portico-movil-3.png" class="d-block w-100" alt="Mobile Gantry Test 3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/test-portico-movil-4.png" class="d-block w-100" alt="Mobile Gantry Test 4">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel10" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel10" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <h3 data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Mobile Gantry Test">Mobile Gantry Test</h3>
-            </article>
-        </section>
+  <header class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#research">Research Interests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#publications">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#current-work">Current Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
+  </header>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Project Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p id="modal-description">Project details will be displayed here.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
+  <section id="projects" class="container mt-5">
+    <h2>Projects</h2>
+    <div class="row">
+      <article class="col-md-4 project-card">
+        <div id="carousel1" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/project-1.png" class="d-block w-100" alt="Project 1 Image">
             </div>
+            <div class="carousel-item">
+              <img src="./assets/project-2.png" class="d-block w-100" alt="Project 2 Image">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+        <h3 data-bs-toggle="modal" data-bs-target="#projectModal" data-bs-whatever="Project 1">Project 1</h3>
+      </article>
+      <!-- Repeat similar structure for other projects -->
     </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoH5Mw26bI2B82Vrhb5loKnn0o0Qn5Er5LOh7BfQ6fo3AO9" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-        var exampleModal = document.getElementById('exampleModal')
-        exampleModal.addEventListener('show.bs.modal', function (event) {
-            var button = event.relatedTarget;
-            var recipient = button.getAttribute('data-bs-whatever');
-            var modalTitle = exampleModal.querySelector('.modal-title');
-            var modalBodyInput = exampleModal.querySelector('.modal-body p');
-            
-            modalTitle.textContent = recipient;
-            modalBodyInput.textContent = 'Details about ' + recipient + ' project will go here.';
-        });
-    </script>
+  <section id="research" class="container mt-5">
+    <h2>Research Interests</h2>
+    <p>My research focuses on the intersection of computational fluid dynamics and environmental engineering, particularly in the design and optimization of particulate collection systems and the study of air flow dynamics in industrial settings.</p>
+  </section>
+
+  <section id="publications" class="container mt-5">
+    <h2>Publications</h2>
+    <ul>
+      <li><a href="https://example.com/publication1" target="_blank">"Title of Publication 1" - Journal Name, Year</a></li>
+      <li><a href="https://example.com/publication2" target="_blank">"Title of Publication 2" - Journal Name, Year</a></li>
+      <!-- Add more publications as needed -->
+    </ul>
+  </section>
+
+  <section id="current-work" class="container mt-5">
+    <h2>Currently Working On</h2>
+    <p>I am currently developing advanced simulation models for cyclone separators using OpenFOAM, focusing on optimizing dust particle collection efficiency and improving overall system performance.</p>
+  </section>
+
+  <section id="contact" class="footer bg-light mt-5">
+    <ul>
+      <li><a href="mailto:camilo.lyv@gmail.com" target="_blank" rel="noopener"><img src="./assets/email.svg" alt="Email Icon"></a></li>
+      <li><a href="tel:3183761067" target="_blank" rel="noopener"><img src="./assets/phone-solid.svg" alt="Phone Icon"></a></li>
+      <li><a href="https://www.linkedin.com/in/camilo-lyons-valero/" target="_blank" rel="noopener"><img src="./assets/linkedin.svg" alt="LinkedIn Icon"></a></li>
+      <li><a href="https://wa.me/573183761067/?text=Hi%20Camilo%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20learn%20more%20about%20your%20projects%20and%20discuss%20possible%20collaborations.%20Can%20we%20talk%20about%20it%3F" target="_blank"><img src="./assets/whatsapp.svg" alt="WhatsApp Icon"></a></li>
+    </ul>
+    <div>
+      <p>Email: camilo.lyv@gmail.com</p>
+      <p>-</p>
+      <p>Phone: +57 318 376 1067</p>
+    </div>
+  </section>
+
+  <div class="modal fade modal-lg" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="projectModalLabel">Project Details</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="carousel100" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel100" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel100" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel100" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <!-- Dynamic content will be injected here -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel100" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel100" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
