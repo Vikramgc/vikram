@@ -63,7 +63,7 @@ header {
 .intro-photo {
   width: 300px; /* Adjust the width as needed */
   height: auto;
-  margin-left: 20px;
+  margin-left: 50px;
   border-radius: 0; /* Remove the circular border radius */
 }
 
