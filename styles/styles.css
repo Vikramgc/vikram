@@ -41,7 +41,7 @@ header {
 }
 .inicio .content-wrapper {
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: center;
   padding: 20px;
 }
@@ -51,11 +51,11 @@ header {
 }
 
 .inicio .image-content {
-  animation: fadeIn 2s;
+  animation: fadeIn 1s;
 }
 
 .inicio .image-content img {
-  width: 150px; /* Adjust the size as needed */
+  width: 100px; /* Adjust the size as needed */
   border-radius: 50%; /* Makes the image circular */
 }
 
