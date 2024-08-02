@@ -26,7 +26,6 @@ header {
   background-image: url("../assets/background2.png");
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
   display: flex;
  align-items: center;
   justify-content: center;
@@ -62,10 +61,10 @@ header {
 }
 
 .intro-photo {
-  width: 150px; /* Adjust the width as needed */
+  width: 300px; /* Adjust the width as needed */
   height: auto;
   margin-left: 20px;
-  border-radius: 50%; /* Makes the photo circular */
+  
 }
 
 .sobre-mi {
