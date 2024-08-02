@@ -32,12 +32,35 @@ header {
   justify-content: center;
   position: relative;
 }
-.inicio h1 {
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inicio h1, .inicio h2 {
   font-family: "Passion One", cursive;
   color: #FBFDFC;
   letter-spacing: 7px;
+}
+
+.inicio h1 {
   font-size: 90px;
   font-weight: 400;
+  margin: 0;
+}
+
+.inicio h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.intro-photo {
+  width: 150px; /* Adjust the width as needed */
+  height: auto;
+  margin-left: 20px;
+  border-radius: 50%; /* Makes the photo circular */
 }
 
 .sobre-mi {
