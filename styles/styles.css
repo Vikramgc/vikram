@@ -63,8 +63,8 @@ header {
 .intro-photo {
   width: 200px; 
   height: auto;
-  margin-right: 50px;
-  border-radius: 10;
+  margin-right: 20px;
+  border-radius: 0;
 }
 
 .sobre-mi {
