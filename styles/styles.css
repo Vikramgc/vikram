@@ -23,7 +23,7 @@ header {
   grid-area: foto;
   height: 100vh;
   padding-top: 50px;
-  background-image: url("../assets/Background_home.png");
+  background-image: url("path_to_your_new_background_image.png"); /* Update with your new background image path */
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -61,10 +61,10 @@ header {
 }
 
 .intro-photo {
-  width: 200px; 
+  width: 300px; /* Adjust the width as needed */
   height: auto;
-  margin-right: 20px;
-  border-radius: 0;
+  margin-left: 20px;
+  border-radius: 0; /* Remove the circular border radius */
 }
 
 .sobre-mi {
@@ -80,16 +80,19 @@ header {
   grid-template-rows: auto;
   grid-gap: 20px;
 }
+
 .sobre-mi .img {
   object-fit: contain;
   max-width: 100%;
   height: auto;
 }
+
 .sobre-mi h2 {
   font-family: "Bebas Neue", sans-serif;
   color: #1b1c22;
   letter-spacing: 3px;
 }
+
 .sobre-mi h3 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -98,30 +101,36 @@ header {
   letter-spacing: 3px;
   margin-bottom: 40px;
 }
+
 .sobre-mi .grey-p {
   color: #a3a4a6;
   text-align: justify;
   font-size: 16px;
 }
+
 .sobre-mi .strong-p {
   color: #1b1c22;
   text-align: right;
   font-weight: 700;
 }
+
 .sobre-mi .item {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 15px;
 }
+
 .sobre-mi .icon {
   height: 40px;
   width: 40px;
 }
+
 .sobre-mi .div {
   display: flex;
   gap: 50px;
 }
+
 .sobre-mi .up {
   position: absolute;
   top: -40px;
@@ -135,6 +144,7 @@ header {
   background-color: #a3a4a6;
   position: relative;
 }
+
 .tools h3 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 40px;
@@ -143,6 +153,7 @@ header {
   margin-bottom: 40px;
   text-align: center;
 }
+
 .tools .cards-tools-container {
   display: flex;
   justify-content: center;
@@ -150,6 +161,7 @@ header {
   gap: 30px;
   margin-top: 80px;
 }
+
 .tools article {
   padding: 7px;
   display: flex;
@@ -157,6 +169,7 @@ header {
   justify-content: flex-end;
   align-items: center;
 }
+
 .tools article h4 {
   font-size: 16px;
   text-align: center;
@@ -164,6 +177,7 @@ header {
   color: #1b1c22;
   margin-top: 30px;
 }
+
 .tools img {
   height: 50px;
   object-fit: contain;
@@ -174,6 +188,7 @@ header {
   padding: 80px 3%;
   background-color: #252c36;
 }
+
 .projects h2 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 40px;
@@ -182,17 +197,20 @@ header {
   margin-bottom: 40px;
   text-align: center;
 }
+
 .projects h3 {
   color: #1b1c22;
   font-size: 20px;
   padding: 5% 0 0 5%;
 }
+
 .projects .projects-container {
   padding-top: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
 }
+
 .projects .project-card {
   width: 300px;
   height: 380px;
@@ -200,9 +218,11 @@ header {
   border-radius: 12px;
   margin: 0 auto;
 }
+
 .projects img {
   border-radius: 12px 12px 0 0;
 }
+
 .projects p {
   color: #a3a4a6;
   padding-left: 5%;
@@ -218,21 +238,25 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .footer ul {
   list-style: none;
   display: flex;
   gap: 20px;
   height: 40px;
 }
+
 .footer img {
   width: 30px;
   height: 30px;
   transition: all 0.4s ease-in-out;
 }
+
 .footer img:hover {
   height: 40px;
   width: 40px;
 }
+
 .footer div {
   display: flex;
   gap: 20px;
@@ -300,17 +324,20 @@ header {
     display: none;
   }
 }
+
 @media screen and (max-width: 580px) {
   .sobre-mi .div {
     flex-direction: column;
     gap: 0px;
   }
 }
+
 @media screen and (min-width: 992px) {
   .navbar-expand-lg .offcanvas .offcanvas-body {
     justify-content: flex-end !important;
   }
 }
+
 .custom-shape-divider-bottom-1695314119 {
   position: absolute;
   bottom: -5px;
@@ -385,5 +412,3 @@ header {
 .carousel-indicators [data-bs-target] {
   background-color: #030303 !important;
 }
-
-/*# sourceMappingURL=styles.css.map */
