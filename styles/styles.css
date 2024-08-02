@@ -39,7 +39,34 @@ header {
   font-size: 90px;
   font-weight: 400;
 }
+.inicio .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
 
+.inicio .text-content {
+  margin-right: 20px; /* Adjust this value as needed */
+}
+
+.inicio .image-content {
+  animation: fadeIn 2s;
+}
+
+.inicio .image-content img {
+  width: 150px; /* Adjust the size as needed */
+  border-radius: 50%; /* Makes the image circular */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .sobre-mi {
   grid-area: sobreMi;
   padding: 80px 3%;
