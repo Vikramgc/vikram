@@ -61,10 +61,10 @@ header {
 }
 
 .intro-photo {
-  width: 300px; 
+  width: 200px; 
   height: auto;
   margin-right: 50px;
-  border-radius: 0;
+  border-radius: 10;
 }
 
 .sobre-mi {
