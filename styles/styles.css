@@ -154,14 +154,18 @@ header {
   text-align: center;
 }
 
-.tools .cards-tools-container {
+.cards-tools-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 30px;
   margin-top: 80px;
 }
 
+<<<<<<< HEAD
+.cards-tools-container article {
+=======
 .tools .cards-tools-container article {
+>>>>>>> parent of 427d11e (Update styles.css)
   padding: 7px;
   display: flex;
   flex-direction: column;
@@ -169,7 +173,11 @@ header {
   align-items: center;
 }
 
+<<<<<<< HEAD
+.cards-tools-container article h4 {
+=======
 .tools .cards-tools-container article h4 {
+>>>>>>> parent of 427d11e (Update styles.css)
   font-size: 16px;
   text-align: center;
   font-weight: 700;
