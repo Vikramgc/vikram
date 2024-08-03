@@ -161,10 +161,6 @@ header {
   margin-top: 80px;
 }
 
-.cards-tools-container article:nth-child(6) {
-  grid-column: span 5;
-}
-
 .cards-tools-container article {
   padding: 7px;
   display: flex;
@@ -173,7 +169,7 @@ header {
   align-items: center;
 }
 
-.tools article h4 {
+.cards-tools-container article h4 {
   font-size: 16px;
   text-align: center;
   font-weight: 700;
