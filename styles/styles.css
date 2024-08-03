@@ -160,7 +160,11 @@ header {
   gap: 30px;
   margin-top: 80px;
 }
-
+.cards-tools-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
 .tools article {
   padding: 7px;
   display: flex;
