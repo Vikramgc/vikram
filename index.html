@@ -1,1388 +1,417 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gloock&family=Passion+One&family=Poller+One&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="icon" href="./assets/gear-svgrepo-com.svg" />
-    <title>Innovations in Mechanical Engineering with Vikram GC</title>
-  </head>
-  <body>
-    <header class="item">
-      <nav id="navbar-example2" class="navbar bg-body-tertiary fixed-top navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-          <span class="title">Innovations in Mechanical Engineering</span>
-          <span class="subtitle">with <span class="name">Vikram GC</span></span>
-        </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Vikram GC</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="nav nav-pills">
-                <li class="nav-item">
-                  <a class="nav-link" href="#inicio">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#sobreMi">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#proyectos">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#articles">Articles</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#interests">Research Interests</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#publications">Publications</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#working">Currently Working</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#herramientas">Tools</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contacto">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-         
-      </nav>
-    </header>
+body {
+  display: grid;
+  color: #FBFDFC;
+  font-family: "Roboto", sans-serif;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header" "div div";
+}
 
-  
-    <style>
-  .navbar-brand {
-    display: flex;
+header {
+  grid-area: header;
+}
+
+.item {
+  grid-area: div;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header" "foto foto" "information information" "sobreMi sobreMi" "projects projects" "tools tools" "footer footer";
+}
+
+.inicio {
+  grid-area: foto;
+  height: 100vh;
+  padding-top: 50px;
+  background-image: url("../assets/BackgroundM.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.inicio h1, .inicio h2 {
+  font-family: "Passion One", cursive;
+  color: #FBFDFC;
+  letter-spacing: 7px;
+  margin: 0;
+}
+
+.inicio h1 {
+  font-size: 90px;
+  font-weight: 400;
+}
+
+.inicio h2 {
+  font-size: 36px;
+}
+
+.intro-photo {
+  width: 400px; /* Adjust the width as needed */
+  height: auto;
+  margin-left: 150px;
+  border-radius: 0; /* Remove the circular border radius */
+}
+
+.sobre-mi {
+  grid-area: sobreMi;
+  padding: 80px 3%;
+  background-color: #FBFDFC;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.sobre-mi .img {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
+.sobre-mi h2 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #1b1c22;
+  letter-spacing: 3px;
+}
+
+.sobre-mi h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  color: #1b1c22;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+
+.sobre-mi .grey-p {
+  color: #a3a4a6;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.sobre-mi .strong-p {
+  color: #1b1c22;
+  text-align: right;
+  font-weight: 700;
+}
+
+.sobre-mi .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.sobre-mi .icon {
+  height: 40px;
+  width: 40px;
+}
+
+.sobre-mi .div {
+  display: flex;
+  gap: 50px;
+}
+
+.sobre-mi .up {
+  position: absolute;
+  top: -40px;
+  right: 3%;
+  height: 250px;
+}
+
+.tools {
+  grid-area: tools;
+  padding: 80px 3% 200px;
+  background-color: #a3a4a6;
+  position: relative;
+}
+
+.tools h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+  color: #1b1c22;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.cards-tools-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.tools article {
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.tools article h4 {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  color: #1b1c22;
+  margin-top: 30px;
+}
+
+.tools figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  margin: 0;
+}
+
+.tools img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.projects h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+  color: #FBFDFC;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.projects h3 {
+  color: #1b1c22;
+  font-size: 20px;
+  padding: 5% 0 0 5%;
+}
+
+.projects .projects-container {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.projects .project-card {
+  width: 300px;
+  height: 380px;
+  background-color: #FBFDFC;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+.projects img {
+  border-radius: 12px 12px 0 0;
+}
+
+.projects p {
+  color: #a3a4a6;
+  padding-left: 5%;
+  font-size: 16px;
+}
+
+.footer {
+  grid-area: footer;
+  padding: 10px 3%;
+  background-color: #252c36;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  height: 40px;
+}
+
+.footer img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.4s ease-in-out;
+}
+
+.footer img:hover {
+  height: 40px;
+  width: 40px;
+}
+
+.footer div {
+  display: flex;
+  gap: 20px;
+}
+
+.bg-body-tertiary {
+  background-color: #252c36 !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #a3a4a6 !important;
+}
+
+.nav-pills {
+  --bs-nav-pills-link-active-bg: $secondary !important;
+}
+
+.nav {
+  --bs-nav-link-color: $secondary !important;
+  --bs-nav-link-hover-color: $secondary !important;
+}
+
+.navbar {
+  padding-left: 3% !important;
+  padding-right: 3% !important;
+}
+
+.navbar-brand {
+  color: #FBFDFC;
+  font-family: "Gloock", serif !important;
+}
+
+.offcanvas-title {
+  font-family: "Gloock", serif !important;
+}
+
+.navbar-toggler {
+  background-color: #FBFDFC !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.nav-link {
+  color: #FBFDFC !important;
+}
+
+.modal-title {
+  color: #1b1c22 !important;
+}
+
+@media screen and (max-width: 991px) {
+  .nav {
+    flex-direction: column !important;
+  }
+  .nav-link {
+    color: #1b1c22 !important;
+  }
+  .sobre-mi {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .sobre-mi .img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .sobre-mi .div {
     flex-direction: column;
-    align-items: flex-start;
+    gap: 0px;
   }
+}
 
-  .navbar-brand .title {
-    font-size: 1.25rem; /* Adjust as needed */
-    font-weight: bold;
+@media screen and (min-width: 992px) {
+  .navbar-expand-lg .offcanvas .offcanvas-body {
+    justify-content: flex-end !important;
   }
+}
 
-  .navbar-brand .subtitle {
-    font-size: 0.875rem; /* Adjust as needed */
-    font-weight: normal;
-  }
+.custom-shape-divider-bottom-1695314119 {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
 
-  .navbar-brand .name {
-    font-style: italic;
-    font-family: 'Cursive', sans-serif; /* You can use a specific cursive font if you have one in mind */
-  }
-</style>
-<div
-      class="item"
-      data-bs-spy="scroll"
-      data-bs-target="#navbar-example2"
-      data-bs-root-margin="0px 0px -40%"
-      data-bs-smooth-scroll="true"
-      tabindex="0"
-    >
-      <section class="inicio" id="inicio">
-    <div data-aos="zoom-in" data-aos-delay="200" data-aos-duration="2000" class="intro-content">
-      <div class="intro-text">
-        <h1>Vikram GC</h1>
-        <h2>Mechanical Engineer</h2>
-        <h3>Kathmandu,Nepal</h3>
-      </div>
-      <img src="./assets/DP.png" alt="Vikram GC Photo" class="intro-photo">
-    </div>
-    <div class="custom-shape-divider-bottom-1695314119">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-      </svg>
-    </div>
-  </section>
-      <section class="sobre-mi" id="sobreMi">
-        <div>
-          <figure>
-            <img src="./assets/CFD.png" alt="mecanic img" class="img" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-          </figure>
-          <figure>
-            <img src="./assets/CAM1.png" alt="mecanic img" class="img" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-          </figure>
-        </div>
-        
-        <div>
-          <h2>ABOUT ME</h2>
-          <h3>Mechanical Engineer</h3>
-          <div class="div">
-            <div>
-              <article class="item">
-                <figure>
-                  <img src="./assets/Design.svg" alt="case icon" class="icon">
-                </figure>
-                <p class="grey-p">Highly skilled in 3D modeling, mold design, product design, and mechanical systems using SolidWorks, AutoCAD, Creo, and Fusion 360. Specialized in creating precise designs for manufacturing and prototyping.</p>
-              </article>
-              <article class="item">
-                <figure>
-                  <img src="./assets/simulation.svg" alt=" icon" class="icon">
-                </figure>
-                <p class="grey-p">Expert in simulation software such as ANSYS and OpenFOAM for conducting Finite Element Analysis (FEA) and Computational Fluid Dynamics (CFD). Proficient in using various principle models to analyze complex systems.</p>
-              </article>
-              <article class="item">
-                <figure>
-                  <img src="./assets/CNC.svg" alt=" icon" class="icon">
-                </figure>
-                <p class="grey-p">Proficient in CNC programming and generating tool paths using Autodesk Fusion 360 Manufacturing workspace, optimizing machining processes for efficiency and precision.</p>
-              </article>
-            </div>
-            <div>
-              <article class="item">
-                <figure>
-                  <img src="./assets/engineer-working.svg" alt=" icon" class="icon">
-                </figure>
-                <p class="grey-p">
-                  Experienced in designing and analyzing mechanical systems, including components, structures, and complete systems, with a strong ability to integrate and evaluate mechanical designs.
-                </p>
-              </article>
-              <article class="item">
-                <figure>
-                  <img src="./assets/3d.svg" alt=" icon" class="icon">
-                </figure>
-                <p class="grey-p">
-                  Intermediate experience with FDM, SLS, and SLA 3D printers for rapid prototyping, capable of producing accurate and functional prototypes for testing and development.
-                </p>
-              </article>
-              <article class="item">
-                <figure>
-                  <img src="./assets/talk.svg" alt=" icon" class="icon">
-                </figure>
-                <p class="grey-p">
-                  Proficient in writing technical articles on design and manufacturing, and experienced in tutoring Design for Manufacturing (DFM) and Design for Assembly (DFA) principles, along with other mechanical engineering topics.
-                </p>
-              </article>
-            </div>
-          </div>
-          <p class="strong-p">
-            Transforming ideas into engineered solutions.
-         </p>
-        </div>
-        <figure>
-          <img src="./assets/Camera.png" alt="mecanic img" class="img up" data-aos="fade-left" data-aos-duration="1200">
-        </figure>
-        <div class="custom-shape-divider-bottom-1695431862">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-          </svg>
-        </div>
-</section>
-<section class="tools" id="herramientas">
-  <h3>Tools</h3>
-  <div class="cards-tools-container">
-    <div class="cards-tools-row">
-    <article data-aos="flip-left" data-aos-duration="1200">
-      <figure>
-        <img src="./assets/ANSYS-logo.png" alt="ANSYS-logo" />
-      </figure>
-      <h4>ANSYS</h4>
-    </article>
-    <article data-aos="flip-left" data-aos-delay="500" data-aos-duration="1200">
-      <figure>
-        <img src="./assets/OpenFOAM-logo.png" alt="OpenFOAM-logo" />
-      </figure>
-      <h4>OpenFOAM</h4>
-    </article>
-    <article data-aos="flip-left" data-aos-delay="1000" data-aos-duration="1200">
-      <figure>
-        <img src="./assets/SolidWorks-logo.png" alt="SolidWorks-logo" />
-      </figure>
-      <h4>SolidWorks</h4>
-    </article>
-    <article data-aos="flip-left" data-aos-delay="1500" data-aos-duration="1200">
-      <figure>
-        <img src="./assets/Fusion360-logo.png" alt="Fusion360-logo" />
-      </figure>
-      <h4>Fusion 360</h4>
-    </article>
-    <article data-aos="flip-left" data-aos-delay="2000" data-aos-duration="1200">
-      <figure>
-        <img src="./assets/Paraview.png" alt="Creo-logo" />
-      </figure>
-      <h4>Paraview</h4>
-    </article>
-    <article data-aos="flip-left" data-aos-delay="2500" data-aos-duration="1200">
-      <figure>
-        <img src="./assets/Autocad.png" alt="AutoCAD-logo" />
-      </figure>
-      <h4>AutoCAD</h4>
-    </article>
-    <article data-aos="flip-left" data-aos-delay="3000" data-aos-duration="1200">
-      <figure>
-        <img src="./assets/Keyshot.png" alt="Keyshot-logo" />
-      </figure>
-      <h4>Keyshot</h4>
-    </article>
-    <article data-aos="flip-left" data-aos-delay="3500" data-aos-duration="1200">
-      <figure>
-        <img src="./assets/word-logo.png" alt="Microsoft Word-logo" />
-      </figure>
-      <h4>Microsoft Word</h4>
-    </article>
-    <article data-aos="flip-left" data-aos-delay="4000" data-aos-duration="1200">
-      <figure>
-        <img src="./assets/excel.png" alt="Microsoft Excel-logo" />
-      </figure>
-      <h4>Microsoft Excel</h4>
-    </article>
-    <article data-aos="flip-left" data-aos-delay="4500" data-aos-duration="1200">
-      <figure>
-        <img src="./assets/Visio-logo.png" alt="Microsoft Visio-logo" />
-      </figure>
-      <h4>Microsoft Visio</h4>
-    </article>
-  </div>
-  </div>
-  <div class="custom-shape-divider-bottom-1695345814">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-      <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-      <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-    </svg>
-  </div>
-</section>
-      <section class="projects" id="proyectos">
-        <h2>Proyectos</h2>
-        <div class="projects-container">
-          <article class="project-card">
-            <div id="carousel1" class="carousel slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carousel1"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel1"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel1"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel1"
-                  data-bs-slide-to="3"
-                  aria-label="Slide 4"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel1"
-                  data-bs-slide-to="4"
-                  aria-label="Slide 5"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel1"
-                  data-bs-slide-to="5"
-                  aria-label="Slide 6"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel1"
-                  data-bs-slide-to="6"
-                  aria-label="Slide 7"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel1"
-                  data-bs-slide-to="7"
-                  aria-label="Slide 8"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel1"
-                  data-bs-slide-to="8"
-                  aria-label="Slide 9"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel1"
-                  data-bs-slide-to="9"
-                  aria-label="Slide 10"
-                ></button>
-              </div>
-              <div
-                class="carousel-inner"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                data-bs-whatever="Plano Filtro Manga AC"
-              >
-                <div class="carousel-item active">
-                  <img
-                    src="./assets/filtro-mangas-1.png"
-                    class="d-block w-100"
-                    alt="plano filtro"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/filtro-mangas-2.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/filtro-mangas-3.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/filtro-mangas-4.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/filtro-mangas-5.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/filtro-mangas-6.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/filtro-mangas-7.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/filtro-mangas-8.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/filtro-mangas-9.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/filtro-mangas-10.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carousel1"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carousel1"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <h3
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              data-bs-whatever="Plano Filtro Manga AC"
-            >
-            Plano Filtro Manga AC
-            </h3>
-            <p data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            data-bs-whatever="Plano Escalera abdjfh asdf dajfhd dfhajdfha fdjfh">dafhudas fadhfadj sdjahjdha hashfa fdahjfjasd afsdfh</p>
-          </article>
-          <article class="project-card">
-            <div id="carousel2" class="carousel slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carousel2"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-              </div>
-              <div
-                class="carousel-inner"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                data-bs-whatever="Chuted Dosif Valvula - Molino"
-              >
-                <div class="carousel-item active">
-                  <img
-                    src="./assets/chute-1.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carousel2"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carousel2"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <h3
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              data-bs-whatever="Chuted Dosif Valvula - Molino"
-            >
-              Chuted Dosif Valvula - Molino
-            </h3>
-          </article>
-          <article class="project-card">
-            <div id="carousel3" class="carousel slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carousel3"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel3"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel3"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel3"
-                  data-bs-slide-to="3"
-                  aria-label="Slide 4"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel3"
-                  data-bs-slide-to="4"
-                  aria-label="Slide 5"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel3"
-                  data-bs-slide-to="5"
-                  aria-label="Slide 6"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel3"
-                  data-bs-slide-to="6"
-                  aria-label="Slide 7"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel3"
-                  data-bs-slide-to="7"
-                  aria-label="Slide 8"
-                ></button>
-              </div>
-              <div
-                class="carousel-inner"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                data-bs-whatever="Pf"
-              >
-                <div class="carousel-item active">
-                  <img
-                    src="./assets/pf-1.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/pf-2.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/pf-3.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/pf-4.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/pf-5.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/pf-6.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/pf-7.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/pf-8.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carousel3"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carousel3"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <h3
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              data-bs-whatever="Pf"
-            >
-              Pf
-            </h3>
-          </article>
-          <article class="project-card">
-            <div id="carousel4" class="carousel slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carousel4"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel4"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel4"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div
-                class="carousel-inner"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                data-bs-whatever="Portico"
-              >
-                <div class="carousel-item active">
-                  <img
-                    src="./assets/portico-1.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/portico-2.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/portico-3.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carousel4"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carousel4"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <h3
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              data-bs-whatever="Portico"
-            >
-              Portico
-            </h3>
-          </article>
-          <article class="project-card">
-            <div id="carousel5" class="carousel slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carousel5"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel5"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-              </div>
-              <div
-                class="carousel-inner"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                data-bs-whatever="Pasarela"
-              >
-                <div class="carousel-item active">
-                  <img
-                    src="./assets/pasarela-1.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/pasarela-1.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carousel5"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carousel5"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <h3
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              data-bs-whatever="Pasarela"
-            >
-              Pasarela
-            </h3>
-          </article>
-          <article class="project-card">
-            <div id="carousel6" class="carousel slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carousel6"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-              </div>
-              <div
-                class="carousel-inner"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                data-bs-whatever="Chute cuadrado"
-              >
-                <div class="carousel-item active">
-                  <img
-                    src="./assets/chute-cuadrado-1.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carousel6"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carousel6"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <h3
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              data-bs-whatever="Chute cuadrado"
-            >
-              Chute cuadrado
-            </h3>
-          </article>
-          <article class="project-card">
-            <div id="carousel7" class="carousel slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carousel7"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel7"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel7"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div
-                class="carousel-inner"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                data-bs-whatever="Tolva Empaque"
-              >
-                <div class="carousel-item active">
-                  <img
-                    src="./assets/tolva-empaque-1.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/tolva-empaque-2.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/tolva-empaque-3.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carousel7"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carousel7"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <h3
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              data-bs-whatever="Tolva Empaque"
-            >
-              Tolva Empaque
-            </h3>
-          </article>
-          <article class="project-card">
-            <div id="carousel8" class="carousel slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carousel8"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel8"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-              </div>
-              <div
-                class="carousel-inner"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                data-bs-whatever="Aero Empaque"
-              >
-                <div class="carousel-item active">
-                  <img
-                    src="./assets/aero-empaque-1.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/aero-empaque-2.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carousel8"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carousel8"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <h3
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              data-bs-whatever="Aero Empaque"
-            >
-              Aero Empaque
-            </h3>
-          </article>
-          <article class="project-card">
-            <div id="carousel9" class="carousel slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carousel9"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel9"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-              </div>
-              <div
-                class="carousel-inner"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                data-bs-whatever="Trans elevador a Aereo Empaque"
-              >
-                <div class="carousel-item active">
-                  <img
-                    src="./assets/trans-elevador-aereo.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/trans-elevador-aereo-2.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carousel9"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carousel9"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <h3
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              data-bs-whatever="Trans elevador a Aereo Empaque"
-            >
-              Trans elevador a Aereo Empaque
-            </h3>
-          </article>
-          <article class="project-card">
-            <div id="carousel10" class="carousel slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carousel10"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel10"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel10"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel10"
-                  data-bs-slide-to="3"
-                  aria-label="Slide 4"
-                ></button>
-              </div>
-              <div
-                class="carousel-inner"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                data-bs-whatever="Prueba portico movil"
-              >
-                <div class="carousel-item active">
-                  <img
-                    src="./assets/portico-movil-1.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/portico-movil-2.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/portico-movil-3.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/portico-movil-4.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carousel10"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carousel10"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <h3
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              data-bs-whatever="Prueba portico movil"
-            >
-              Prueba portico movil
-            </h3>
-          </article>
-          <article class="project-card">
-            <div id="carousel11" class="carousel slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carousel11"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-              </div>
-              <div
-                class="carousel-inner"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                data-bs-whatever="Soporte elevador"
-              >
-                <div class="carousel-item active">
-                  <img
-                    src="./assets/soporte-elevador.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carousel11"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carousel11"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <h3
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              data-bs-whatever="Soporte elevador"
-            >
-              Soporte elevador
-            </h3>
-          </article>
-        </div>
-        <div
-          class="modal fade modal-lg"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">
-                  New message
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <div id="carousel100" class="carousel slide">
-                  <div class="carousel-indicators">
-                    <button
-                      type="button"
-                      data-bs-target="#carousel100"
-                      data-bs-slide-to="0"
-                      class="active"
-                      aria-current="true"
-                      aria-label="Slide 1"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carousel100"
-                      data-bs-slide-to="1"
-                      aria-label="Slide 2"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carousel100"
-                      data-bs-slide-to="2"
-                      aria-label="Slide 3"
-                    ></button>
-                  </div>
-                  <div class="carousel-inner"></div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carousel100"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carousel100"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="footer" id="contacto">
-        <ul>
-          <li>
-            <a
-              href="mailto:camilo.lyv@gmail.com"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="./assets/email.svg" alt="email-icon" />
-            </a>
-          </li>
-          <li>
-            <a href="tel:3183761067" target="_blank" rel="noopener">
-              <img src="./assets/phone-solid.svg" alt="phone-icon" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/camilo-lyons-valero/"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="./assets/linkedin.svg" alt="linkedin-icon" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://wa.me/573183761067/?text=¡Hola,%20Camilo!%20He%20visitado%20tu%20portafolio%20web%20y%20me%20gustaría%20saber%20más%20sobre%20tus%20proyectos%20y%20explorar%20posibles%20oportunidades%20de%20colaboración.%20¿Podríamos%20hablar%20al%20respecto?%20¡Espero%20tu%20respuesta!"
-              target="_blank"
-            >
-              <img src="./assets/whatsapp.svg" alt="whatsapp-icon" />
-            </a>
-          </li>
-        </ul>
-        <div>
-          <p>camilo.lyv@gmail.com</p>
-          <p>-</p>
-          <p>+57 318 376 1067</p>
-        </div>
-      </section>
-    </div>
+.custom-shape-divider-bottom-1695314119 svg {
+  position: relative;
+  display: block;
+  width: calc(129% + 1.3px);
+  height: 169px;
+  transform: rotateY(180deg);
+}
 
-    <script src="./main.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
-</html>
+.custom-shape-divider-bottom-1695314119 .shape-fill {
+  fill: #FBFDFC;
+}
+
+.custom-shape-divider-bottom-1695345814 {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1695345814 svg {
+  position: relative;
+  display: block;
+  width: calc(142% + 1.3px);
+  height: 95px;
+}
+
+.custom-shape-divider-bottom-1695345814 .shape-fill {
+  fill: #252C36;
+}
+
+.custom-shape-divider-bottom-1695431862 {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1695431862 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 69px;
+}
+
+.custom-shape-divider-bottom-1695431862 .shape-fill {
+  fill: #252C36;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #030303 !important;
+}
