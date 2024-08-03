@@ -154,14 +154,14 @@ header {
   text-align: center;
 }
 
-.cards-tools-container {
+.tools .cards-tools-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 30px;
   margin-top: 80px;
 }
 
-.cards-tools-container article {
+.tools .cards-tools-container article {
   padding: 7px;
   display: flex;
   flex-direction: column;
@@ -169,7 +169,7 @@ header {
   align-items: center;
 }
 
-.cards-tools-container article h4 {
+.tools .cards-tools-container article h4 {
   font-size: 16px;
   text-align: center;
   font-weight: 700;
