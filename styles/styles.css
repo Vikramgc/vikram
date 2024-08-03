@@ -61,9 +61,9 @@ header {
 }
 
 .intro-photo {
-  width: 300px; /* Adjust the width as needed */
+  width: 400px; /* Adjust the width as needed */
   height: auto;
-  margin-left: 50px;
+  margin-left: 150px;
   border-radius: 0; /* Remove the circular border radius */
 }
 
