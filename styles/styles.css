@@ -155,9 +155,8 @@ header {
 }
 
 .tools .cards-tools-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 30px;
   margin-top: 80px;
 }
@@ -178,15 +177,19 @@ header {
   margin-top: 30px;
 }
 
-.tools img {
-  height: 50px;
-  object-fit: contain;
+.tools figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  margin: 0;
 }
 
-.projects {
-  grid-area: projects;
-  padding: 80px 3%;
-  background-color: #252c36;
+.tools img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .projects h2 {
