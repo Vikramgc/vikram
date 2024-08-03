@@ -156,16 +156,16 @@ header {
 
 .cards-tools-container {
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 30px;
   margin-top: 80px;
 }
-.cards-tools-row {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+
+.cards-tools-container article:nth-child(6) {
+  grid-column: span 5;
 }
-.tools article {
+
+.cards-tools-container article {
   padding: 7px;
   display: flex;
   flex-direction: column;
