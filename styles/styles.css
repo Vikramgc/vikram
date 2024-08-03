@@ -161,11 +161,7 @@ header {
   margin-top: 80px;
 }
 
-<<<<<<< HEAD
-.cards-tools-container article {
-=======
-.tools .cards-tools-container article {
->>>>>>> parent of 427d11e (Update styles.css)
+.tools article {
   padding: 7px;
   display: flex;
   flex-direction: column;
@@ -173,11 +169,7 @@ header {
   align-items: center;
 }
 
-<<<<<<< HEAD
-.cards-tools-container article h4 {
-=======
-.tools .cards-tools-container article h4 {
->>>>>>> parent of 427d11e (Update styles.css)
+.tools article h4 {
   font-size: 16px;
   text-align: center;
   font-weight: 700;
