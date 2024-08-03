@@ -155,16 +155,23 @@ header {
 }
 
 .cards-tools-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 30px;
-  margin-top: 80px;
+  margin-top: 100px;
+}
+
+.cards-tools-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 .tools article {
   padding: 7px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 }
@@ -191,6 +198,7 @@ header {
   max-height: 100%;
   object-fit: contain;
 }
+
 
 .projects h2 {
   font-family: "Bebas Neue", sans-serif;
