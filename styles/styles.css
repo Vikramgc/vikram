@@ -156,16 +156,16 @@ header {
 
 .cards-tools-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 30px;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .cards-tools-row {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 .tools article {
