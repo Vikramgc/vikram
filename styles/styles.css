@@ -214,6 +214,7 @@ header {
   grid-area: working;
   background-color: #252c36;
   padding: 40px 0;
+  position: relative; /* Allows positioning of child elements */
 }
 
 .currently-working h1 {
@@ -227,6 +228,8 @@ header {
   flex-direction: column; /* Stack items vertically */
   align-items: flex-start; /* Align items to the start (left) */
   justify-content: flex-start;
+  position: relative; /* Required for absolute positioning of video */
+  z-index: 2; /* Ensure text is above the video */
 }
 
 .currently-working .container h3 {
@@ -237,19 +240,26 @@ header {
   font-family: 'Roboto', sans-serif; /* Custom Google Font */
   color: #f39c12; /* Example color */
   margin-bottom: 30px;
+  position: relative; /* Ensure the text stays above the video */
+  z-index: 3; /* Ensure heading is above the video */
 }
 
 .working-content {
   display: flex;
   align-items: flex-start; /* Align items to the top */
   width: 100%; /* Make sure it takes full width of container */
+  position: relative; /* Required for absolute positioning of video */
 }
 
 .description {
   flex: 1;
-  max-width: 60%; /* Adjust based on how much space you want */
+  max-width: 55%; /* Adjusted width to allow more space for the video */
   padding: 30px;
   text-align: left; /* Align text to the left */
+  color: #fff; /* White text to contrast against video */
+  z-index: 3; /* Ensure the text is above the video */
+  position: relative; /* Keep the text above the video */
+  /* Removed background color for transparency */
 }
 
 .description p {
@@ -259,14 +269,20 @@ header {
 
 .video-container {
   flex: 1;
-  max-width: 40%; /* Adjust based on how much space you want for the video */
-  padding: 30px;
+  position: absolute; /* Allow the video to cover the background */
+  top: 0;
+  right: -20%; /* Shift video more to the right */
+  width: 65%; /* Increase the width to take up more space */
+  height: 100%; /* Ensure video covers the entire height */
+  z-index: 1; /* Make sure the video is behind the text */
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
 }
 
 video {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire container */
+  border-radius: 0; /* Remove any border radius */
 }
 
 /* Styles for h4 */
@@ -296,6 +312,8 @@ video {
   opacity: 0; /* Initial state is invisible */
   animation: fadeIn 1s ease-out forwards; /* Apply the animation */
 }
+
+
 
 .inicio {
   grid-area: foto;
